@@ -1,1 +1,1 @@
-# cn-fontmin-webpack-plugin
+# chinese-fontmin-webpack-plugin
