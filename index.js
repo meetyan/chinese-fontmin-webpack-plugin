@@ -35,17 +35,21 @@ class ChineseFontminWebpackPlugin {
 
     this.glyphText = ''
 
-    if (this.glyph.custom?.replace) {
-      this.glyphText = this.glyph.custom.text
-      return
-    }
+    this.defineGlyphText()
+  }
 
-    if (this.glyph.han2500) {
-      this.glyphText = this.glyphText + glyphFiles.han2500
+  defineGlyphText() {
+    if (this.glyph.custom?.replace) {
+      this.glyphText = this.glyph.custom.text || ''
+      return
     }
 
     if (this.glyph.han1000) {
       this.glyphText = this.glyphText + glyphFiles.han1000
+    }
+
+    if (this.glyph.han2500) {
+      this.glyphText = this.glyphText + glyphFiles.han2500
     }
 
     // 因为 7000 字已包含上述的 2500 + 1000，无需再叠加
