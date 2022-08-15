@@ -4,4 +4,4 @@ const add = (a, b) => {
 
 alert(`add(1, 2): ${add(1, 2)}`)
 
-console.log('hello')
+console.log('hello1')
