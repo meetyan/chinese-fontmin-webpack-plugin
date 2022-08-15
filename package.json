@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "fontmin": "^0.9.9",
+    "lodash.isplainobject": "^4.0.6",
     "webpack-sources": "^3.2.3"
   }
 }
