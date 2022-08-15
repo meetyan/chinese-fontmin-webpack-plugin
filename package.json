@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/meetyan/chinese-fontmin-webpack-plugin.git",
   "author": "Jiajun Yan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fontmin": "^0.9.9",
+    "webpack-sources": "^3.2.3"
+  }
 }
