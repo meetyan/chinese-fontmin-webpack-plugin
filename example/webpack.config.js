@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+
 const {ChineseFontminWebpackPlugin} = require('../index')
 
 module.exports = (env, argv) => {
@@ -17,8 +19,12 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: './src/index.html',
       }),
+      new CleanWebpackPlugin(),
       new ChineseFontminWebpackPlugin({
-        custom: []
+        custom: {
+          replace: true,
+          text: 'abc',
+        },
       }),
     ],
     resolve: {
