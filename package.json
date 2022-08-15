@@ -1,8 +1,8 @@
 {
-  "name": "cn-fontmin-webpack-plugin",
+  "name": "chinese-fontmin-webpack-plugin",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/meetyan/cn-fontmin-webpack-plugin.git",
+  "repository": "https://github.com/meetyan/chinese-fontmin-webpack-plugin.git",
   "author": "Jiajun Yan",
   "license": "MIT"
 }
