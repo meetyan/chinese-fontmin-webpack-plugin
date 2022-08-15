@@ -1,0 +1,8 @@
+@font-face {
+  font-family: SourceHanSerifCN-SemiBold;
+  src: url('./assets/SourceHanSerifCN-Bold.ttf');
+}
+
+.app {
+  font-family: SourceHanSerifCN-SemiBold;
+}

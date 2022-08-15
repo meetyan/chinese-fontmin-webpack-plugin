@@ -1,5 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ChineseFontminWebpackPlugin = require('../index')
 
 module.exports = (env, argv) => {
   console.log('webpack config argv =>', argv)
@@ -16,6 +17,7 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: './src/index.html',
       }),
+      new ChineseFontminWebpackPlugin(),
     ],
     resolve: {
       modules: [__dirname, 'src', 'node_modules'],
@@ -30,7 +32,18 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.css$/,
-          use: ['style-loader', 'css-loader'],
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                modules: {
+                  exportLocalsConvention: 'camelCase',
+                  localIdentName: '[name]__[local]___[hash:base64:5]',
+                },
+              },
+            },
+          ],
         },
         {
           test: /\.png|svg|jpg|gif$/,

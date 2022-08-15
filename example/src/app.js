@@ -1,8 +1,10 @@
 import React from 'react'
 
+import styles from './app.css'
+
 const App = () => (
-  <div>
-    <h1>Hello React</h1>
+  <div className={styles.app}>
+    <h1>中文 Fontmin Webpack 插件</h1>
   </div>
 )
 
