@@ -19,6 +19,16 @@
 
 目前，此插件是基于 Webpack 5 开发的，Webpack 4.x 版本未经测试。
 
+在配置前，先执行安装：
+
+```bash
+# npm
+npm i -D chinese-fontmin-webpack-plugin
+
+# yarn
+yarn add -D chinese-fontmin-webpack-plugin
+```
+
 在 `webpack.config.js` 下的 `plugins` 字段里，添加以下代码:
 
 ```js
