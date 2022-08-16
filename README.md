@@ -42,3 +42,13 @@ plugins: [
 
 ...
 ```
+
+## 例子
+
+请查看 `example` 文件夹内的 `webpack.config.js` 文件。
+
+## 注意事项
+
+在使用前，请先下载 [Fontmin app](https://ecomfe.github.io/fontmin/)，确保字体文件在 app 中本身就能正确提取。
+
+当 `custom.text = ''` 且 `custom.replace = true` 的时候，Fontmin 会直接输入原来的文件。
